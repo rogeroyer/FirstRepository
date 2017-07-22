@@ -1,44 +1,36 @@
-package com.jdialog.www;
-//  imageButton.jpgÒª·ÅÔÚjava->awt&swing->bin->  º¬ÓĞclassÎÄ¼şµÄÎÄ¼şÀïÃæ
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.net.URL;
 import javax.swing.*;
-public class JButtonTest extends JFrame {
+public class JPanelTest extends JFrame {
+	
 	private static final long serialVersionUID = 1L;
-	public JButtonTest() {
-		URL url = MyImageIcon.class.getResource("imageButton.jpg");
-		Icon icon = new ImageIcon(url);
-		setLayout(new GridLayout(3,2,5,5));
+	public JPanelTest() {
 		Container c = getContentPane();
-		for(int i = 0;i < 5;i++) {
-			// ´´½¨°´Å¥£¬Í¬Ê±ÉèÖÃ°´Å¥ÎÄ×ÖÓëÍ¼±ê
-			JButton J = new JButton("button" + i,icon);
-			c.add(J);
-			if(i % 2 == 0) {
-				J.setEnabled(false);  // ÉèÖÃÆäÖĞÒ»Ğ©°´Å¥²»¿ÉÓÃ
-			}
-		}
-		JButton jb = new JButton(); // ÊµÀı»¯Ò»¸öÃ»ÓĞÎÄ×ÖºÍÍ¼Æ¬µÄ°´Å¥
-		jb.setMaximumSize(new Dimension(40,20)); // ÉèÖÃ°´Å¥ÓëÍ¼Æ¬ÏàÍ¬´óĞ¡
-		jb.setIcon(icon); // Îª°´Å¥Ìí¼ÓÍ¼±ê
-   		jb.setHideActionText(true);
-		jb.setToolTipText("Í¼Æ¬°´Å¥"); // ÉèÖÃ°´Å¥ÌáÊ¾ÎªÎÄ×Ö
-		jb.setBorderPainted(false);  // ÉèÖÃ°´Å¥±ß½ç²»ÏÔÊ¾
-		jb.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				// µ¯³öÈ·ÈÏ¶Ô»°¿ò
-				JOptionPane.showMessageDialog(null, "µ¯³ö¶Ô»°¿ò");
-			}
-		});
-		c.add(jb);
-		setSize(1000,700);
+		// å°†æ•´ä¸ªå®¹å™¨è®¾ç½®ä¸º2è¡Œ1åˆ—çš„ç½‘æ ¼å¸ƒå±€
+		setLayout(new GridLayout(2,2,10,10));
+		// åˆå§‹åŒ–ä¸€ä¸ªé¢æ¿ï¼Œè®¾ç½®1è¡Œ3åˆ—çš„ç½‘æ ¼å¸ƒå±€
+		JPanel p1 = new JPanel(new GridLayout(1,3,10,10));
+		JPanel p2 = new JPanel(new GridLayout(1,2,10,10));
+		JPanel p3 = new JPanel(new GridLayout(1,2,10,10));
+		JPanel p4 = new JPanel(new GridLayout(2,1,10,10));
+		p1.add(new JButton("1"));
+		p1.add(new JButton("2"));
+		p1.add(new JButton("3"));
+		p2.add(new JButton("4"));
+		p2.add(new JButton("5"));
+		p3.add(new JButton("6"));
+		p3.add(new JButton("7"));
+		p4.add(new JButton("8"));
+		p4.add(new JButton("9"));
+		c.add(p1);
+		c.add(p2);
+		c.add(p3);
+		c.add(p4);
+		setSize(400,200);
 		setVisible(true);
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 	}
 	public static void main(String[] args) {
-		new JButtonTest();
+		new JPanelTest();
 	}
 
 }
