@@ -28,3 +28,44 @@
 
 ## 数字签名
     - [SHA-256](https://en.bitcoin.it/wiki/SHA-256)
+
+## 算力
+```
+算力 / 哈希率/ Hashrate
+
+算力是计算机能够完成一个数学程序的速度，譬如接收任何一组信息，并将其转换成字母和一定长度的数字的速度就称为算力。
+
+在比特币“挖矿”中，对于数学难题的求解需要找到相应的数学解，而对于任意一个给定范围内的 Hash 值，其求解只能通过自动生成的随机数，因此一个挖矿机每秒能做多少次求解过程就是算力的代表，其单位为 Hash/s 。
+
+千哈希 / 秒/ Kilo-hashes per Second / KH/s
+
+KH/s 是千哈希 /秒的缩写，即10hashes/s 。
+
+百万哈希 / 秒/ Mega-hashes per Second / MH/s
+
+MH/s 是百万哈希 /秒的缩写，即10hashes/s 。
+
+十亿哈希 / 秒/ Tera-hashes per Second / TH/s
+
+TH/s 是十亿哈希 /秒的缩写，即10hashes/s 。
+
+万亿哈希 / 秒/ Giga-hashes per Second / GH/s
+
+GH/s 是万亿哈希 /秒的缩写，即10hashes/s 。
+
+千万亿哈希 / 秒/ Peta-hashes per Second / PH/s
+
+PH/s 是千万亿哈希 /秒的缩写，即10hashes/s 。
+
+十亿兆哈希 / 秒/ Exa-hashes per Second / EH/s
+
+EH/s 是10哈希 /秒，截止至 2018 年 1 月，比特币全网算力约为20EH/s 。
+
+10哈希 / 秒/ Zetta-hashes per Second / ZH/s
+
+ZH/s 是10哈希 /秒的缩写。
+
+10哈希 / 秒/ Yotta-hashes per Second / YH/s
+
+YH/s 是10哈希 /秒的缩写。
+```
