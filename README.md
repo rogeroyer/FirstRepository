@@ -6,6 +6,7 @@
 - [BitcoinWiki](https://zh-cn.bitcoin.it/wiki/%E9%A6%96%E9%A1%B5)
 - [BlockExplorer](https://blockexplorer.com/)
 - [InferWebsite](https://github.com/rogeroyer/FirstRepository/blob/master/bitcoin.png)
+- [BTC.com](https://bch.btc.com/)
 ## **bitcoin简介**
 > Bitcoin(比特币) 是中本聪于2009年发明的一种数字货币。它同时也是为实现此货币流通之开源软件的名字。
 > 
